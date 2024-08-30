@@ -1,0 +1,9 @@
+@import "style.css";
+@import "font.css";
+
+#section1 {
+  width: 144rem;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 140px 0 80px 0;
+}

@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/section1.css" />
   </head>
   <body>
     <!-- 본문 -->
@@ -72,7 +73,16 @@
       </nav>
     </header>
     <main id="main">
-      <div id="section1"></div>
+      <div id="section1">
+        <div class="row">
+          <div class="col-md-6 col-lg-5 bg-info">
+            <div class="visual-text">클라우드 보안 <br />솔루션 전문기업</div>
+          </div>
+          <div class="col-md-6 col-lg-7">
+            <img src="./images/메인 이미지.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
       <div id="section2"></div>
       <div id="section2"></div>
       <div id="section2"></div>
@@ -106,7 +116,7 @@
       $(window).scroll(function () {
         let scroll = $(window).scrollTop();
 
-        if (scroll > 300) {
+        if (scroll > 240) {
           $("#header").addClass("scroll");
         } else {
           $("#header").removeClass("scroll");
