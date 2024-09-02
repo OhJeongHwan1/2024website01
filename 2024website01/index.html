@@ -20,6 +20,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -75,11 +83,32 @@
     <main id="main">
       <div id="section1">
         <div class="row">
-          <div class="col-md-6 col-lg-5 bg-info">
-            <div class="visual-text">클라우드 보안 <br />솔루션 전문기업</div>
+          <div class="col-md-6 col-xl-5">
+            <div class="text-box text-center text-md-start mb-5">
+              <div class="wow fadeInDown" data-wow-delay="0.3s">
+                <div class="top">Cloud Security Solution <b>JIRANSNC</b></div>
+                <h1 class="visual-text">
+                  클라우드 <span>보안</span> <br /><span>솔루션 전문기업</span>
+                </h1>
+              </div>
+              <div class="wow fadeInUp" data-wow-delay="0.5s">
+                분야별 최고의 기술력을 가진 다양한 솔루션과 서비스를
+                제공합니다.<br />
+                <span>지란지교에스앤씨와 함께 하면 더 안전</span>합니다.
+              </div>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-7">
+          <div class="col-md-6 col-xl-7 wow zoomIn" data-wow-delay="0.8s">
             <img src="./images/메인 이미지.png" class="img-fluid" />
+          </div>
+          <div class="scroll i-up">
+            <div class="arrow">
+              <em></em>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span class="scroll-txt">SCROLL DOWN</span>
           </div>
         </div>
       </div>
@@ -111,8 +140,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- wow -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- script -->
     <script>
+      new WOW().init();
+
       $(window).scroll(function () {
         let scroll = $(window).scrollTop();
 
