@@ -52,6 +52,17 @@
   line-height: 1.3;
 }
 
+@keyframes up2 {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 #section2 .layout .title h3:first-child {
   color: var(--main-color-2);
 }
@@ -109,6 +120,16 @@
   width: calc(100% - 29.2rem);
   padding-left: 14rem;
   position: relative;
+}
+
+#section2 .scroll1 {
+  animation: up2 0.8s cubic-bezier(0.3, 0, 0.2, 1) both 0.5s;
+}
+#section2 .scroll2 {
+  animation: up2 0.8s cubic-bezier(0.3, 0, 0.2, 1) both 1s;
+}
+#section2 .scroll3 {
+  animation: up2 0.8s cubic-bezier(0.3, 0, 0.2, 1) both 1.3s;
 }
 
 .swiper {
